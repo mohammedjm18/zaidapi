@@ -2,7 +2,7 @@ const axios = require("axios");
 const url = "http://etisalrx.com/panel/api/mobile_api2.php";
 const headers = {
   Authorization:
-    "Basic NTU6MjYxNjFiYmFiMDE5ZDRiY2JlODA5NTE5MGEzOWQxM2U2YTU0ODRhYTc2NjEyYzIyYTMyYjk1ZTY0MzIxZGUzNQ==",
+    "Basic NTU6NTEyMTU2MTM1ODI2NzgyYWZlMzJhMDU4Yzc1NmFhNjc4ZmQxODMzZDZlZTQ0YzhlY2YwMjg5OWRkMjhmOGU4Zg==",
 };
 
 exports.fetch = async (body = "") => {
