@@ -1,15 +1,19 @@
 const axios = require("axios");
+const { base64ToUtf8 } = require("../models/buffer");
+const { uft8ToBase64 } = require("../models/buffer");
 const url = "http://etisalrx.com/panel/api/mobile_api2.php";
 const headers = {
+  "User-Agent": "Etisal RX",
   Authorization:
-    "Basic NTU6MjYxNjFiYmFiMDE5ZDRiY2JlODA5NTE5MGEzOWQxM2U2YTU0ODRhYTc2NjEyYzIyYTMyYjk1ZTY0MzIxZGUzNQ==",
+    "Basic " +
+    "Mjg6MDc5Njg4NzgzZmRkOWJkNjgwNTQ5MDQ0Y2Y4MGFjZTM3NWM4OWM0NWQ3YmYyODhlMGRiZWNjMjE4OTI0ZmU3NQ==",
 };
 
 exports.fetch = async (body = "") => {
   try {
     const res = await axios.post(url, body, { headers });
-    console.log(res.data);
+    return res.data;
   } catch (err) {
-    console.log(err.message);
+    throw new Error(err.message);
   }
 };
