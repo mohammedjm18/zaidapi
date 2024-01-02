@@ -5,8 +5,7 @@ const url = "http://etisalrx.com/panel/api/mobile_api2.php";
 const headers = {
   "User-Agent": "Etisal RX",
   Authorization:
-    "Basic " +
-    "Mjg6MDc5Njg4NzgzZmRkOWJkNjgwNTQ5MDQ0Y2Y4MGFjZTM3NWM4OWM0NWQ3YmYyODhlMGRiZWNjMjE4OTI0ZmU3NQ==",
+    "Basic NTU6MjYxNjFiYmFiMDE5ZDRiY2JlODA5NTE5MGEzOWQxM2U2YTU0ODRhYTc2NjEyYzIyYTMyYjk1ZTY0MzIxZGUzNQ==",
 };
 
 exports.fetch = async (body = "") => {
